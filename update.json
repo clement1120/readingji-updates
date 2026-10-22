@@ -1,17 +1,17 @@
 {
-  "versionName": "3.27.22",
-  "note": "- 换回正式版（release）：去掉调试版的额外开销，卡顿大幅改善\n- 关掉系统持续取色：不再每 300ms 采样一次屏幕像素，菜单和翻页都更跟手\n- 内置更新通道改为 GitHub",
-  "createdAt": "2026-10-22T23:24:42.072095+08:00",
+  "versionName": "3.27.24",
+  "note": "- 内置更新通道改为 GitHub（原坚果云 1GB 月配额已耗尽）\n- 换回正式版（release）：去掉调试版的额外运行时开销\n- 关掉系统持续取色：不再每 300ms 采样一次屏幕像素，菜单与翻页更跟手",
+  "createdAt": "2026-10-22T23:34:38.559559+08:00",
   "packages": {
     "arm64-v8a": {
-      "apkName": "ReadingJi-3.27.22-arm64-v8a.apk",
-      "size": 19098803,
-      "sha256": "2dc4e644ca2d97b076f56e664838c463ab0f417bc07d3695f7f81694004e5fd1"
+      "apkName": "ReadingJi-3.27.24-arm64-v8a.apk",
+      "size": 19098797,
+      "sha256": "59a4fa4638de47127795554e2ed83609204e14d3a11a15772c556da4862b00a7"
     },
     "universal": {
-      "apkName": "ReadingJi-3.27.22-universal.apk",
+      "apkName": "ReadingJi-3.27.24-universal.apk",
       "size": 25671270,
-      "sha256": "2e271357a8c8b28cc1636194617a97eb6f324a89778d59e2a409bb3e7d26791d"
+      "sha256": "eaca596bec7597bfe1af1dc630e299f8d29a2f31771e4218491c4f3797fee7dd"
     }
   },
   "patches": {}

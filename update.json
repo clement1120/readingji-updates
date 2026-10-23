@@ -1,173 +1,185 @@
 {
-  "versionName": "3.27.29",
-  "note": "增量更新修复：侧载装机（adb/拷包安装）用户第一次应用内更新也能走增量补丁，不再强制下载整包\n界面预估下载大小同步修正",
-  "createdAt": "2026-10-23T15:46:40.661337+08:00",
+  "versionName": "3.27.30",
+  "note": "侧载装机用户首次应用内更新也能走增量补丁（base.apk 播种）\n更新通道注释与实际来源对齐",
+  "createdAt": "2026-10-23T16:12:00.655388+08:00",
   "packages": {
     "arm64-v8a": {
-      "apkName": "ReadingJi-3.27.29-arm64-v8a.apk",
-      "size": 19115190,
-      "sha256": "e05d72ea776d1310e1ca6e57a0e49ecec64ef8cecc73c6f64636de4916f2c4de"
+      "apkName": "ReadingJi-3.27.30-arm64-v8a.apk",
+      "size": 19115181,
+      "sha256": "c175661391a42c5221a76da60b300a7d70d0a767aa712f0f824c9562d69be66c"
     },
     "universal": {
-      "apkName": "ReadingJi-3.27.29-universal.apk",
-      "size": 25687665,
-      "sha256": "c891bc838efc86e224f89ccaadab59faad2b948470c3799023624af51c8789a4"
+      "apkName": "ReadingJi-3.27.30-universal.apk",
+      "size": 25687663,
+      "sha256": "526732fccdf6710152174ca1169547040c608e19718729694310621bed7760c0"
     }
   },
   "patches": {
     "3.27.10": {
       "universal": {
-        "patchName": "patch-3.27.10-to-3.27.29-universal.patch",
-        "size": 11367104,
-        "sha256": "5318b9f54bb726a70faa988e04cf047c6aaa0ec91cb0301dac2413699bced882"
+        "patchName": "patch-3.27.10-to-3.27.30-universal.patch",
+        "size": 11364462,
+        "sha256": "d028445d790ace78826919abe2f06c6b0ec6d0877a97dbb005eebc8c32cbeaff"
       }
     },
     "3.27.11": {
       "universal": {
-        "patchName": "patch-3.27.11-to-3.27.29-universal.patch",
-        "size": 11320705,
-        "sha256": "998a5d6086c2862cf661d927abda8fd6e3e79ed6e6683f3a96dadabc7e3ad6f9"
+        "patchName": "patch-3.27.11-to-3.27.30-universal.patch",
+        "size": 11319211,
+        "sha256": "3cfba12873c334cb5283ef7b0e2f39297aff0b8db17b45d1759bedb1e3444173"
       }
     },
     "3.27.12": {
       "universal": {
-        "patchName": "patch-3.27.12-to-3.27.29-universal.patch",
-        "size": 11234674,
-        "sha256": "dd1ad1c055d7460dc0095eb43521bec8cc23e49c6ffb09a769b4838c5588ea53"
+        "patchName": "patch-3.27.12-to-3.27.30-universal.patch",
+        "size": 11235865,
+        "sha256": "c798d11187adcf1f5eb6720e454da3aaa743bbc617e3d0087d1cb450c59b700a"
       }
     },
     "3.27.13": {
       "universal": {
-        "patchName": "patch-3.27.13-to-3.27.29-universal.patch",
-        "size": 11233451,
-        "sha256": "c9a974fca1c97a684064be7cc156ea1619a7795a4bbdbd14ebd6200267366f98"
+        "patchName": "patch-3.27.13-to-3.27.30-universal.patch",
+        "size": 11233659,
+        "sha256": "0920e494dffcdd7881393e78d07024fa5c74bf1f03604c16a4498a962779fb7f"
       }
     },
     "3.27.14": {
       "universal": {
-        "patchName": "patch-3.27.14-to-3.27.29-universal.patch",
-        "size": 11159117,
-        "sha256": "78c9543d76c3ded243831cab8b3882ce4f798ae7c4751a17f94f1e65346f8109"
+        "patchName": "patch-3.27.14-to-3.27.30-universal.patch",
+        "size": 11180523,
+        "sha256": "1ebfca8438f94e3986385cc6f2867edb6eb4778a65652d1f91c8b632863d1b4c"
       }
     },
     "3.27.15": {
       "universal": {
-        "patchName": "patch-3.27.15-to-3.27.29-universal.patch",
-        "size": 11176642,
-        "sha256": "8209d1cb9881edc01371af015011310424215985902bf255d4621fca1b2c9e20"
+        "patchName": "patch-3.27.15-to-3.27.30-universal.patch",
+        "size": 11180195,
+        "sha256": "b7717ee4614ab777d4f583302f9e4a98b2034129eea99acd05c8740a7bd8f2c1"
       }
     },
     "3.27.16": {
       "universal": {
-        "patchName": "patch-3.27.16-to-3.27.29-universal.patch",
-        "size": 11181471,
-        "sha256": "794231e74bb58d88ce57ada1a638ea680cf05fb694df520132c6c28cf8ea6952"
+        "patchName": "patch-3.27.16-to-3.27.30-universal.patch",
+        "size": 11177030,
+        "sha256": "0aa3c2836bb4b7db9138f5945c94915d3b19a77811d01c360fa23db83d8c6dce"
       }
     },
     "3.27.17": {
       "universal": {
-        "patchName": "patch-3.27.17-to-3.27.29-universal.patch",
-        "size": 11164624,
-        "sha256": "5db16b12fda648d7cad25bf349d0b585f1257730bfbb797c2b5463b8ed144be6"
+        "patchName": "patch-3.27.17-to-3.27.30-universal.patch",
+        "size": 11177791,
+        "sha256": "25f58feb9f5a3c0a4e9d44b9deb86585969b0f20b00cc935eaf21108a9e77bd3"
       }
     },
     "3.27.18": {
       "universal": {
-        "patchName": "patch-3.27.18-to-3.27.29-universal.patch",
-        "size": 11168452,
-        "sha256": "c5d50cb6d0328b4e710728b8da0a94ab99a1cc647756e0796082aa5b61bfafb8"
+        "patchName": "patch-3.27.18-to-3.27.30-universal.patch",
+        "size": 11163088,
+        "sha256": "3043420b5cbf79fb42dcf85755ca3f2302c5099465cb372925b6fbcd87801ee7"
       }
     },
     "3.27.22": {
       "arm64-v8a": {
-        "patchName": "patch-3.27.22-to-3.27.29-arm64-v8a.patch",
-        "size": 11139593,
-        "sha256": "c1f840cd1f6d2e82e8055aefe7503a1357afb4f8bedc867c770272828400d1e9"
+        "patchName": "patch-3.27.22-to-3.27.30-arm64-v8a.patch",
+        "size": 11122394,
+        "sha256": "06c51564f71d5698a687dc1b226eaf023d4f24a1133e74e9eabf8d200bd9e45b"
       },
       "universal": {
-        "patchName": "patch-3.27.22-to-3.27.29-universal.patch",
-        "size": 11147643,
-        "sha256": "fab4ec1e63d3cd78e28ed678de7916800e2ab4320cd95b08efeb8f8267aa1a51"
+        "patchName": "patch-3.27.22-to-3.27.30-universal.patch",
+        "size": 11125504,
+        "sha256": "076731bb453a66d092c60f6e8dcdc8337a43e12d2b82ac9796a047bbdf263fe5"
       }
     },
     "3.27.24": {
       "arm64-v8a": {
-        "patchName": "patch-3.27.24-to-3.27.29-arm64-v8a.patch",
-        "size": 11151464,
-        "sha256": "fef136982d19169baeac99514daf48189f42b813a18a59ba653b41c727a59696"
+        "patchName": "patch-3.27.24-to-3.27.30-arm64-v8a.patch",
+        "size": 11158111,
+        "sha256": "60dfb8512b040e8d802372fdf3e157e3eb86b6d00e863ebfb47ff60707efcd71"
       },
       "universal": {
-        "patchName": "patch-3.27.24-to-3.27.29-universal.patch",
-        "size": 11175602,
-        "sha256": "6dad5896fc21a6d6e91ca1da413d014c5d7ed62871adb7b366fbe59670d1b235"
+        "patchName": "patch-3.27.24-to-3.27.30-universal.patch",
+        "size": 11154490,
+        "sha256": "f8dd7f23117bf17b113d9045bc79e7265832f623c2c1444505db6032ee1afddb"
       }
     },
     "3.27.26": {
       "universal": {
-        "patchName": "patch-3.27.26-to-3.27.29-universal.patch",
-        "size": 11149926,
-        "sha256": "f218748aacb6995de7285fb6437e53a6d9bb6ba5ffb2f97a7ef4829ce515406c"
+        "patchName": "patch-3.27.26-to-3.27.30-universal.patch",
+        "size": 11140763,
+        "sha256": "04da557289f815f1715c97ee223dd33702c47e0de6cc2d93721a81ca10fb022a"
       }
     },
     "3.27.27": {
       "universal": {
-        "patchName": "patch-3.27.27-to-3.27.29-universal.patch",
-        "size": 11149205,
-        "sha256": "c12d53f9284e30577944371cc1aedf73aac65c0e5abcb223b2f4132f09f2a18a"
+        "patchName": "patch-3.27.27-to-3.27.30-universal.patch",
+        "size": 11132532,
+        "sha256": "96e1517bf952e6017d4c0621af8c5f3dea97c067dc71ae1bb10386f6dc5efe6e"
       }
     },
     "3.27.28": {
       "arm64-v8a": {
-        "patchName": "patch-3.27.28-to-3.27.29-arm64-v8a.patch",
-        "size": 11175222,
-        "sha256": "a56152a9611b57100ce457bd1fbffd0f362435103e6816736eea6092c8b1824a"
+        "patchName": "patch-3.27.28-to-3.27.30-arm64-v8a.patch",
+        "size": 10967492,
+        "sha256": "db84baa20b018de08623fd57600a4832e0fead0277f4b78ba642c7040e034fd6"
       },
       "universal": {
-        "patchName": "patch-3.27.28-to-3.27.29-universal.patch",
-        "size": 11184402,
-        "sha256": "4ab155387c6bc7699c4907a532c0163715322e594df466ae03b9e4ba31b7bdd4"
+        "patchName": "patch-3.27.28-to-3.27.30-universal.patch",
+        "size": 10976225,
+        "sha256": "fe17ed6b7e8d708aca0ccdd6f1568580671dd1119cc550cda0036438053091db"
+      }
+    },
+    "3.27.29": {
+      "arm64-v8a": {
+        "patchName": "patch-3.27.29-to-3.27.30-arm64-v8a.patch",
+        "size": 10929688,
+        "sha256": "b06937778a91fda193ab67f4ba9e233eb215b20f1f134ca885293ce6b23a725c"
+      },
+      "universal": {
+        "patchName": "patch-3.27.29-to-3.27.30-universal.patch",
+        "size": 10907658,
+        "sha256": "2b8f3a96714c8e4d4364dca0d1db661ecb213adf9e54b23c7e2d412b03409b3b"
       }
     },
     "3.27.4": {
       "universal": {
-        "patchName": "patch-3.27.4-to-3.27.29-universal.patch",
-        "size": 11368794,
-        "sha256": "843e04ce5aac1cb6a5163669ce1129abe5053bc3652a157f254a2908620ce964"
+        "patchName": "patch-3.27.4-to-3.27.30-universal.patch",
+        "size": 11367370,
+        "sha256": "0a3ed4541a33a9400f4d6f0a71bad99cdf8488aaa58ba12bfd579ce1a9693dcb"
       }
     },
     "3.27.5": {
       "universal": {
-        "patchName": "patch-3.27.5-to-3.27.29-universal.patch",
-        "size": 11369930,
-        "sha256": "5b60ddd000a7623b93f905dc26d74f3d911203d738fcf581576d4d9b507057bc"
+        "patchName": "patch-3.27.5-to-3.27.30-universal.patch",
+        "size": 11368055,
+        "sha256": "3847bc5572565b758f5682e1ec14745d4021f5ac7d6c07230f89b181d89a7649"
       }
     },
     "3.27.6": {
       "universal": {
-        "patchName": "patch-3.27.6-to-3.27.29-universal.patch",
-        "size": 11368305,
-        "sha256": "f6c6556434124a524ace9000559263f706d0d44a1b50a7b9e3e65a2d7e0957c4"
+        "patchName": "patch-3.27.6-to-3.27.30-universal.patch",
+        "size": 11368845,
+        "sha256": "e360762544d16eda617169fb88ad6c55631a62f6d0442f5d9b9c646567283c71"
       }
     },
     "3.27.7": {
       "universal": {
-        "patchName": "patch-3.27.7-to-3.27.29-universal.patch",
-        "size": 11368307,
-        "sha256": "ae53eb7197ab666f5cfa6a6de0da392853c03e5e471b8ba8f94fb5db94ef9a78"
+        "patchName": "patch-3.27.7-to-3.27.30-universal.patch",
+        "size": 11367744,
+        "sha256": "e11d9d2547910cd658687430529a732010a7c4da54aa8b9fd695f0d5e06ad189"
       }
     },
     "3.27.8": {
       "universal": {
-        "patchName": "patch-3.27.8-to-3.27.29-universal.patch",
-        "size": 11368541,
-        "sha256": "67589a0fd5b92c2585d7dea69f2ce831c97990b6ccbb100c7372e72a7d9b8673"
+        "patchName": "patch-3.27.8-to-3.27.30-universal.patch",
+        "size": 11368661,
+        "sha256": "1ff165e1bb2fa93d3a64b651960b6660fe812b7d9b23a9e05dd5e8fa8c3320ea"
       }
     },
     "3.27.9": {
       "universal": {
-        "patchName": "patch-3.27.9-to-3.27.29-universal.patch",
-        "size": 11369774,
-        "sha256": "ef5060fff80865993e64dbdd9e298caaca39495487d7ae6b671e81bdb3e5900d"
+        "patchName": "patch-3.27.9-to-3.27.30-universal.patch",
+        "size": 11368488,
+        "sha256": "d13a30a3142d0b5d81ea72303a5df71f783eefda14530bd1878e9ea67a13a6cb"
       }
     }
   }

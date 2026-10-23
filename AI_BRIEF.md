@@ -119,6 +119,14 @@ cd legado-md3
 arm64 用户（绝大多数）永远全量下载。补丁基线在 `bases/`（只放 release 包），
 arm64 基线只有近期版本有存量；更老的版本用户按 universal 全量回落，可接受。
 
+**清单源要多路 + 每路独立超时**：`raw.githubusercontent.com` 国内时通时断，
+`cdn.jsdelivr.net` 部分网络 SSL 直接失败。2026-10-23 真机实测：检查更新 15s 超时，
+因为只有两个源且共享 OkHttp 的 connectTimeout(15s) 会让第一个挂起的源独自吃光
+总预算。现在 4 个源（raw → gcore.jsdelivr → fastly.jsdelivr → api.github.com
+contents），每个源独立 `withTimeout(5000)`，总超时 30s；GitHub API 的 base64
+包装由 `decodeManifest` 解。实测耗时：api 0.65s / gcore 1.8s / fastly 3.5s /
+raw 0.97s（三次挂两次）。
+
 **删死代码的方法论**：按文件名批量删之前，先 `grep -rnw` 该文件里**每个顶层符号**，
 确认无外部引用。只 grep 文件名对应的类名会漏。删完必跑一次构建；
 单元测试源集平时不编译，孤儿测试要单独扫。

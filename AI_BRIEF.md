@@ -101,6 +101,24 @@ cd legado-md3
 把 `.value` 的读取推到最小作用域（`Modifier.composed` 是官方为此准备的）。
 注意 `PointerInputChange.consume()` 是成员函数，不要 import。
 
+**derivedStateOf 冻结构（3.27.26 P0）**：`remember { derivedStateOf { 普通参数.字段 } }`
+是坑——remember 缓存首次组合的闭包不重跑，plain 值读取又不向 derivedStateOf 注册依赖，
+值永久冻在首次组合。实例：`ReadBookMenuBar.kt` 的 menuShown 冻结 → 阅读菜单永远不显示，
+而直接读 state 的 `ReaderMenuDismissLayer` 变成全屏隐形可点层吃掉下一次点击
+（症状："点屏幕毫无反应"）。**修法**：普通 data class 参数就在组合期直接读（随重组刷新）；
+要"内容不重组"用 `remember(snapshot)` 带 key 的稳定快照（见 `rememberMenuContentState`）。
+仓库内先例：`BookshelfScreen.kt` 注释。BookshelfScreen 还有多处同款写法待验证。
+
+**增量补丁必须写进 update.json（3.27.24 踩坑）**：补丁只传成 Release 附件、
+清单 `patches` 是空的 → 所有用户静默回落全量下载，"增量更新"实际失效。
+上传后必须 `curl raw` 回读清单，确认 `patches` 里每个 from-version 都在、
+且都指向当前版本。
+
+**补丁按架构分发**：`AppUpdater.tryIncremental` 查 `patches[baseVersion][pkg.key]`，
+`pkg.key` 是解析后包的架构——**arm64 用户要 arm64 补丁**，只出 universal 补丁的话
+arm64 用户（绝大多数）永远全量下载。补丁基线在 `bases/`（只放 release 包），
+arm64 基线只有近期版本有存量；更老的版本用户按 universal 全量回落，可接受。
+
 **删死代码的方法论**：按文件名批量删之前，先 `grep -rnw` 该文件里**每个顶层符号**，
 确认无外部引用。只 grep 文件名对应的类名会漏。删完必跑一次构建；
 单元测试源集平时不编译，孤儿测试要单独扫。
